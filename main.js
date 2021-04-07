@@ -71,7 +71,7 @@ function setClock(hours, minutes, seconds) {
 const addToDoButton = document.querySelector('#addToDo')
 const toDoContainer = document.querySelector('#toDoContainer')
 const inputField = document.querySelector('#inputField')
-console.log(addToDoButton, toDoContainer, inputField)
+
 const addToList = () => {
   const paragraph = document.createElement('p')
   paragraph.classList.add('paragraph-styling')
@@ -84,7 +84,6 @@ const addToList = () => {
   })
 }
 inputField.addEventListener('keydown', (e) => {
-  console.log('result', e)
   if (e.keyCode === 13) {
     addToList()
   }
